@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    height: 72px;
+    color: white;
+    justify-content: space-between;
+}
+
+nav p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+
+#nav-logo {
+    background-color: #e33e42;
+    width: 72px;
+}
+
+#nav-logo img {
+    width: 33px;
+    margin-top: 14px;
+    margin-left: 18px;
+    display: inline-block;
+    flex-grow: 1;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2d2d2d;
+    flex-grow: 9.5;
+    border-right: 4px solid white;
+}
+
+#nav-efa {
+    font-family: 'Crimson Text', serif;
+    flex-grow: 7;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 100;
+    letter-spacing: 0px;
+}
+
+.nav-menu p {
+    flex-grow: 0.9;
+}
+
+#employers {
+    width: 82px;
+}
+#search {
+    margin-right: 20px;
+}
+
+.schedule {
+   background-color: #348db9;
+   flex-grow: 1;
+   text-align: center;
+   padding-top: 28px;
+   border-right: 4px solid white;
+}
+
+.apply {
+    background-color: #e33e42;
+    flex-grow: 1;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 28px;
+}
