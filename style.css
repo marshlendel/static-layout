@@ -95,7 +95,7 @@ nav p {
 }
 
 .apply {
-  background-color: #e33e42;
+  background-color: #e33e42; 
   flex-grow: 1;
   text-align: center;
   padding-top: 28px;
@@ -127,8 +127,7 @@ nav p {
   margin-bottom: 138px;
 }
 
-.CTA h1,
-h2 {
+.CTA h1, .CTA h2 {
   font-weight: 900;
   padding: 8px 15.5px 5px 15.5px;
   letter-spacing: 2px;
@@ -196,8 +195,8 @@ video {
 .information h2 {
   padding: 0 10px;
   font-size: 36px;
-  font-weight: 600;
   color: #2d2d2d;
+  font-weight: 800;
   line-height: 1.1;
   margin-bottom: 10px;
   text-align: left;
