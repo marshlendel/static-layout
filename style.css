@@ -10,6 +10,9 @@ nav {
     height: 72px;
     color: white;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav p {
@@ -23,6 +26,11 @@ nav p {
 #nav-logo {
     background-color: #e33e42;
     width: 72px;
+    transition: background-color 0.2s;
+}
+
+#nav-logo:hover  {
+    background-color: #BA1D22;
 }
 
 #nav-logo img {
@@ -37,7 +45,7 @@ nav p {
     align-items: center;
     justify-content: space-evenly;
     background-color: #2d2d2d;
-    flex-grow: 9.5;
+    flex-grow: 9.2;
     border-right: 4px solid white;
 }
 
@@ -48,15 +56,26 @@ nav p {
     margin-left: 20px;
     font-weight: 100;
     letter-spacing: 0px;
+    height: auto;
+    padding: 0px;
+    text-align: inherit;
+    margin-bottom: 5px;
 }
 
-.nav-menu p {
-    flex-grow: 0.9;
+.nav-menu-item {
+    flex-grow: 1;
+    height: 72px;
+    padding-top: 28px;
+    text-align: center;
 }
 
 #employers {
-    width: 82px;
+    margin-right: 12px;
 }
+.nav-menu-item:hover {
+    background-color: #202020;
+}
+
 #search {
     margin-right: 20px;
 }
@@ -67,6 +86,12 @@ nav p {
    text-align: center;
    padding-top: 28px;
    border-right: 4px solid white;
+   transition: background-color 0.2s;
+}
+
+
+.schedule:hover {
+    background-color: #51abd7;
 }
 
 .apply {
@@ -75,4 +100,72 @@ nav p {
     flex-grow: 1;
     text-align: center;
     padding-top: 28px;
+    transition: background-color 0.2s;
+}
+
+.apply:hover  {
+    background-color: #BA1D22;
+}
+
+.space-filler {
+    height: 72px;
+}
+/* Hero section styles */
+.hero {
+    height: calc(100vh - 72px);
+    color: white;
+    font-family: overpass;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 260px;
+    margin-bottom: 138px;
+}
+
+.CTA h1, h2 {
+    font-weight: 900;
+    padding: 8px  15.5px 5px 15.5px;
+    letter-spacing: 2px;
+}
+.CTA h1 {
+    font-size: 58px;
+    background-color: #000000b3;
+}
+
+.CTA h2 {
+    font-size: 32px;
+    background-color: #e33e42;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+.hero h2:hover {
+    background-color: #BA1D22;
+}
+
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#chevDown {
+    text-shadow: 0px 0px 12px rgb(0 0 0 / 80%);
+    transition: color 0.2s;
+}
+
+#chevDown:hover {
+    color: #e33e42;
+}
+
+video {
+position: absolute;
+ width: 100%;
+ z-index: -1;
 }
