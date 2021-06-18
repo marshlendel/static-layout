@@ -129,15 +129,16 @@ nav p {
 .CTA h1, .CTA h2 {
   font-weight: 900;
   padding: 8px 15.5px 5px 15.5px;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
 }
 
 .cta-box {
     position: absolute;
-    top: 257px;
+    top: 265px;
 }
 .CTA h1 {
   font-size: 3.65rem;
+  padding: 10px 20px 10px;
   background-color: #000000b3;
 }
 
