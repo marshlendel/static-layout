@@ -6,6 +6,10 @@
   color: inherit;
 }
 
+body {
+    background-color: #efefef;;
+}
+
 /* Navigation styles */
 nav {
   display: flex;
@@ -14,12 +18,13 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
 }
 
 nav p {
   font-family: "Overpass", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
@@ -53,7 +58,7 @@ nav p {
 #nav-efa {
   font-family: "Crimson Text", serif;
   flex-grow: 7;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-left: 20px;
   font-weight: 100;
   letter-spacing: 0px;
@@ -114,17 +119,15 @@ nav p {
   height: calc(100vh - 72px);
   color: white;
   font-family: overpass;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+
 }
 
 .CTA {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 260px;
-  margin-bottom: 138px;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .CTA h1, .CTA h2 {
@@ -132,16 +135,22 @@ nav p {
   padding: 8px 15.5px 5px 15.5px;
   letter-spacing: 2px;
 }
+
+.cta-box {
+    position: absolute;
+    top: 250px;
+}
 .CTA h1 {
-  font-size: 58px;
+  font-size: 3.65rem;
   background-color: #000000b3;
 }
 
 .CTA h2 {
-  font-size: 32px;
+  font-size: 2rem;
   background-color: #e33e42;
   transition: background-color 0.2s;
   margin-top: 20px;
+  display: inline-block;
 }
 
 .hero h2:hover {
@@ -155,6 +164,8 @@ nav p {
 }
 
 #chevDown {
+position: absolute;
+bottom: 50px;
   text-shadow: 0px 0px 12px rgb(0 0 0 / 80%);
   transition: color 0.2s;
 }
@@ -166,6 +177,10 @@ nav p {
 video {
   position: absolute;
   width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   z-index: -3;
 }
 
@@ -184,7 +199,7 @@ video {
 }
 
 .information h1 {
-  font-size: 58px;
+  font-size: 3.625rem;
   font-weight: 900;
   color: #348db9;
   padding-top: 100px;
@@ -194,7 +209,7 @@ video {
 
 .information h2 {
   padding: 0 10px;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #2d2d2d;
   font-weight: 800;
   line-height: 1.1;
@@ -204,7 +219,7 @@ video {
 }
 
 .information p {
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 1.4;
   color: #676767;
   margin-bottom: 30%;
@@ -218,6 +233,8 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  max-height: 500px;
+  overflow: hidden;
   width: 25%;
   margin: 0 0.5%;
   padding: 20px;
@@ -228,7 +245,7 @@ h3 {
   color: white;
   background-color: #e33e42;
   transition: background-color 0.2s;
-  font-size: 21px;
+  font-size: 1.3125rem;
   padding: 10px 0;
   letter-spacing: 1px;
   position: absolute;
